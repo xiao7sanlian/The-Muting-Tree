@@ -27,7 +27,9 @@ let changelog = `<h1>Changelog:</h1><br>
 	<h3>v3.0 2026/8/13</h3><br>
 		- Added all contents after Ban Account and storyline.<br>
 	<h3>v3.1 2026/8/15</h3><br>
-		- Translated the game into English.<br>`
+		- Translated the game into English.<br>
+	<h3>v3.1.1 2026/8/17</h3><br>
+		- Fixed some text bugs.<br>`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 

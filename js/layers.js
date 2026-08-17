@@ -169,7 +169,7 @@ addLayer("A", {
      done() {return hasChallenge('S',13)}, 
      unlocked(){return true},
      onComplete() {player.A.progress.push(player.timePlayed)},
-     tooltip() {a= "Complete the second Muted Stone challenge."
+     tooltip() {a= "Complete the third Muted Stone challenge."
         if(hasAchievement(this.layer,this.id)) a=a+'<br>Completed at '+formatTime(player.A.progress[11])
         return a
      },
@@ -235,7 +235,7 @@ addLayer("A", {
      done() {return hasMilestone('B',9)}, 
      unlocked(){return true},
      onComplete() {player.A.progress.push(player.timePlayed)},
-     tooltip() {a= "Complete 3 blacklist challenges"
+     tooltip() {a= "Complete 3 blacklist challenges."
         if(hasAchievement(this.layer,this.id)) a=a+'<br>Completed at '+formatTime(player.A.progress[17])
         return a
      },
@@ -1206,7 +1206,7 @@ challenges: {
     13: {
         name: "Anti-Dilation",
         challengeDescription: "Spamming speed and mute duration gain mult ^0.0005. Reset the contents of the first layer on entering it.",
-        goalDescription(){return '1e10 seconds of mute duration'},
+        goalDescription(){return '1e10 message'},
         rewardDescription(){return "Strongly boost the effect of milestone '1 Muted Stone'. (^2000)"},
         unlocked(){return hasMilestone('S',10)},
         onEnter(){layerDataReset('J',[])
@@ -1464,7 +1464,7 @@ addLayer("F", {
         cost(x) { return n(10).pow(x) },
         effect(x) {return this.base().pow(x)
         },
-        display() { return "Multiply mute duration gain by "+format(this.base())+" per purchase (based on bese)<br>Currently: x"+format(buyableEffect(this.layer,this.id))+'<br>Cost: '+format(this.cost())+'bese' },
+        display() { return "Multiply mute duration gain by "+format(this.base())+" per purchase (based on bese)<br>Currently: x"+format(buyableEffect(this.layer,this.id))+'<br>Cost: '+format(this.cost())+' bese' },
         canAfford() { return player.F.baixie.gte(this.cost()) },
         unlocked(){return hasMilestone('F',2)},
         buy() {
