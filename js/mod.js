@@ -29,7 +29,9 @@ let changelog = `<h1>Changelog:</h1><br>
 	<h3>v3.1 2026/8/15</h3><br>
 		- Translated the game into English.<br>
 	<h3>v3.1.1 2026/8/17</h3><br>
-		- Fixed some text bugs.<br>`
+		- Fixed some text bugs.<br>
+	<h3>v3.1.2 2026/10/3</h3><br>
+		- Fixed bese NaN bug: buying bese buyables after airplane ticket 16 may cause nan.<br>`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 

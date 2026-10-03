@@ -1444,7 +1444,7 @@ addLayer("F", {
         canAfford() { return player.F.baixie.gte(this.cost()) },
         unlocked(){return hasMilestone('F',2)},
         buy() {
-            player.F.baixie = player.F.baixie.sub(this.cost())
+            if(!hasMilestone('F',9))player.F.baixie = player.F.baixie.sub(this.cost())
             setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
         },
         buyMax(){if(!this.unlocked()) return 
@@ -1468,7 +1468,7 @@ addLayer("F", {
         canAfford() { return player.F.baixie.gte(this.cost()) },
         unlocked(){return hasMilestone('F',2)},
         buy() {
-            player.F.baixie = player.F.baixie.sub(this.cost())
+            if(!hasMilestone('F',9))player.F.baixie = player.F.baixie.sub(this.cost())
             setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
         },
         buyMax(){if(!this.unlocked()) return 
@@ -1492,7 +1492,7 @@ addLayer("F", {
         canAfford() { return player.F.baixie.gte(this.cost()) },
         unlocked(){return hasMilestone('F',2)},
         buy() {
-            player.F.baixie = player.F.baixie.sub(this.cost())
+            if(!hasMilestone('F',9))player.F.baixie = player.F.baixie.sub(this.cost())
             setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
         },
         buyMax(){if(!this.unlocked()) return 
@@ -1516,7 +1516,7 @@ addLayer("F", {
         canAfford() { return player.F.baixie.gte(this.cost()) },
         unlocked(){return hasUpgrade('F',21)},
         buy() {
-            player.F.baixie = player.F.baixie.sub(this.cost())
+            if(!hasMilestone('F',9))player.F.baixie = player.F.baixie.sub(this.cost())
             setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
         },
         buyMax(){if(!this.unlocked()) return 
